@@ -14,65 +14,75 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg p-1" style="background-color: #615EFC;">
         <div class="container-fluid">
-          <!-- Brand Logo and Text -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="ADMIN/assets/images/svit_logo.png" alt="Logo" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 20px;">
-            <div class="ms-2 d-none d-md-block">
-              <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
-              <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
-            </div>
-          </a>
-          <!-- Hamburger menu button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <!-- Brand Logo and Text -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="ADMIN/assets/images/svit_logo.png" alt="Logo" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 20px;">
+                <div class="ms-2 d-none d-md-block">
+                    <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
+                    <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
+                </div>
+            </a>
+            <!-- Hamburger menu button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <!-- Text appears here only in mobile view -->
-            <div class="d-md-none ms-2 mb-2">
-              <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
-              <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- Text appears here only in mobile view -->
+                <div class="d-md-none ms-2 mb-2">
+                    <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
+                    <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
+                </div>
+                <!-- Navigation Links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="admin-dashboard.html" style="margin-top: 10px; color: white;">Dashboard</a>
+                    </li>
+                    <!-- Dropdown Navigation Link -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+                          Classes
+                        </a>
+                        <!-- Contents of Dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="admin-classes_grade7.html">GRADE 7</a></li>
+                            <li><a class="dropdown-item" href="admin-classes_grade8.html">GRADE 8</a></li>
+                            <li><a class="dropdown-item" href="admin-classes_grade9.html">GRADE 9</a></li>
+                            <li><a class="dropdown-item" href="admin-classes_grade10.html">GRADE 10</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown Navigation Link -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="student-account.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+                            Users Lists
+                        </a>
+                        <!-- Contents of Dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="admin-faculty_list.html">Faculty List</a></li>
+                            <li><a class="dropdown-item" href="admin-guidance_list.html">Guidance</a></li>
+                            <li><a class="dropdown-item" href="admin-registrar_list.html">Registrar</a></li>
+                            <li><a class="dropdown-item" href="admin-accounting_list.html">Accounting</a></li>
+                            <li><a class="dropdown-item" href="admin-admin_list.html">Admin</a></li>
+                        </ul>
+                    </li>
+                    <!-- Third Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="student-account.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+                            Account
+                        </a>
+                        <!-- Contents of Dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Security</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#" style="color: red;">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <!-- Navigation Links -->
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="admin-dashboard.html" style="margin-top: 10px; color: white;">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" aria-current="page" href="admin-classes.html" style="margin-top: 10px; color: white;">Classes</a>
-              </li>
-              <!-- Dropdown Navigation Link -->
-              <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
-                  Users Lists
-                </a>
-                <!-- Contents of Dropdown -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="admin-faculty_list.html">Faculty List</a></li>
-                  <li><a class="dropdown-item" href="admin-guidance_list.html">Guidance</a></li>
-                  <li><a class="dropdown-item" href="admin-registrar_list.html">Registrar</a></li>
-                  <li><a class="dropdown-item" href="admin-accounting_list.html">Accounting</a></li>
-                  <li><a class="dropdown-item" href="admin-admin_list.html">Admin</a></li>
-                </ul>
-              </li>
-              <!-- Third Dropdown -->
-              <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="student-account.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
-                  Account
-                </a>
-                <!-- Contents of Dropdown -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Security</a></li>
-                  <div class="dropdown-divider"></div>
-                  <li><a class="dropdown-item" href="#" style="color: red;">Log Out</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
     </nav>
   <!-- Title Page -->
