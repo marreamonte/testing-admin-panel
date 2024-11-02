@@ -39,7 +39,7 @@
                 <!-- Navigation Links -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="admin-dashboard.html" style="margin-top: 10px; color: white;">Dashboard</a>
+                        <a class="nav-link mx-2" aria-current="page" href="/ADMIN/admin-dashboard.html" style="margin-top: 10px; color: white;">Dashboard</a>
                     </li>
                     <!-- Dropdown Navigation Link -->
                     <li class="nav-item dropdown">
@@ -48,23 +48,23 @@
                         </a>
                         <!-- Contents of Dropdown -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="admin-classes_grade7.html">GRADE 7</a></li>
-                            <li><a class="dropdown-item" href="admin-classes_grade8.html">GRADE 8</a></li>
-                            <li><a class="dropdown-item" href="admin-classes_grade9.html">GRADE 9</a></li>
-                            <li><a class="dropdown-item" href="admin-classes_grade10.html">GRADE 10</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-classes_grade7.html">GRADE 7</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-classes_grade8.html">GRADE 8</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-classes_grade9.html">GRADE 9</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-classes_grade10.html">GRADE 10</a></li>
                         </ul>
                     </li>
                     <!-- Dropdown Navigation Link -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+                        <a class="nav-link mx-2 dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
                           Records
                         </a>
                         <!-- Contents of Dropdown -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="Accounting/accounting-financial_recs.html">Financial Record</a></li>
-                            <li><a class="dropdown-item" href="admin-classes_grade8.html">Attendance Record</a></li>
-                            <li><a class="dropdown-item" href="admin-classes_grade9.html">Academic Record</a></li>
-                            <li><a class="dropdown-item" href="admin-classes_grade10.html">Anecdotal Record</a></li>
+                            <li><a class="dropdown-item active" href="/ADMIN/Accounting/accounting-financial_recs.html">Financial Record</a></li>
+                            <li><a class="dropdown-item" href="#">Attendance Record</a></li>
+                            <li><a class="dropdown-item" href="#">Academic Record</a></li>
+                            <li><a class="dropdown-item" href="#">Anecdotal Record</a></li>
                         </ul>
                     </li>
                     <!-- Dropdown Navigation Link -->
@@ -74,12 +74,12 @@
                         </a>
                         <!-- Contents of Dropdown -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="admin-faculty_list.html">Students List</a></li>
-                            <li><a class="dropdown-item" href="admin-faculty_list.html">Faculty List</a></li>
-                            <li><a class="dropdown-item" href="admin-guidance_list.html">Guidance</a></li>
-                            <li><a class="dropdown-item" href="admin-registrar_list.html">Registrar</a></li>
-                            <li><a class="dropdown-item" href="admin-accounting_list.html">Accounting</a></li>
-                            <li><a class="dropdown-item" href="admin-admin_list.html">Admin</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-registrar_list.html">Students List</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-faculty_list.html">Faculty List</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-guidance_list.html">Guidance</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-registrar_list.html">Registrar</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-accounting_list.html">Accounting</a></li>
+                            <li><a class="dropdown-item" href="/ADMIN/admin-admin_list.html">Admin</a></li>
                         </ul>
                     </li>
                     <!-- Third Dropdown -->
@@ -101,35 +101,95 @@
     </nav>
     <!-- Title Page -->
     <div class="page-title mb-4" style="margin:15px;">
-        <h2 style="color: #615EFC; font-weight: bold; margin-right: 20px; padding-left: 50px;">Classes</h2>
+        <h2 style="color: #615EFC; font-weight: bold; margin-right: 20px; padding-left: 50px;">Financial Record</h2>
         <hr style="margin-top: 0; color: black;">
     </div>
     <!-- Tabs Nav -->
     <div class="container">
         <ul class="nav nav-tabs" id="facultyTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="sec1-tab" data-bs-toggle="tab" data-bs-target="#sec1-tab-pane" type="button" role="tab" aria-controls="sec1-tab-pane" aria-selected="true">7 - GENESIS</button>
-            </li> <!--SECTION 1-->
+                <button class="nav-link active" id="sec1-tab" data-bs-toggle="tab" data-bs-target="#sec1-tab-pane" type="button" role="tab" aria-controls="sec1-tab-pane" aria-selected="true">Students Financial Record</button>
+            </li> <!--VIEW/EDIT LIST-->
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="sec2-tab" data-bs-toggle="tab" data-bs-target="#sec2-tab-pane" type="button" role="tab" aria-controls="sec2-tab-pane" aria-selected="true">7 -     EXSODUS</button>
-            </li> <!--SECTION 2-->
+                <button class="nav-link" id="sec2-tab" data-bs-toggle="tab" data-bs-target="#sec2-tab-pane" type="button" role="tab" aria-controls="sec2-tab-pane" aria-selected="true">Add New Payment Record</button>
+            </li> <!--ADD RECORD-->
         </ul>
     </div>
     <!-- Tabs Contents -->
     <div class="container">
-        <!--SECION 1-->
+        <!--VIEW/EDIT LIST-->
         <div class="tab-content" id="facultyTabContent">
             <div class="tab-pane fade show active" id="sec1-tab-pane" role="tabpanel" aria-labelledby="sec1-tab" tabindex="0">
                 <div class="contaier">
-                    
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <!--SECTION 2-->
+        <!--ADD RECORD-->
         <div class="tab-content" id="facultyTabContent">
-            <div class="tab-pane fade" id="sec2-tab-pane" role="tabpanel" aria-labelledby="sec2-tab" tabindex="0">
-                <div class="contaier">
-                    
+            <div class="tab-pane fade m-3" id="sec2-tab-pane" role="tabpanel" aria-labelledby="sec2-tab" tabindex="0">
+                <div class="container">
+                    <div class="col-md-4 col-sm-6 mb-3 ms-auto">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Student Name" aria-label="Student's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+                        </div>
+                    </div>                    
+
+                    <form class="row g-3">
+                        <div class="col-md-3">
+                            <label for="inputEmail4" class="form-label">Date of Payment</label>
+                            <input type="date" class="form-control" id="inputDate">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputPassword4" class="form-label">Amount</label>
+                            <input type="number" class="form-control" id="inputAmount" name="amount" min="0" step="0.01" placeholder="0.00">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputState" class="form-label">Payment Method</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>...</option>
+                                <option>Bank Transfer</option>
+                                <option>Credit/Debit Card Payment</option>
+                                <option>Mobile Payment Apps</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputZip" class="form-label">Receipt Number</label>
+                            <input type="number" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12 text-end" style="margin: 3vh auto;">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -21,8 +21,8 @@
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="/ADMIN/assets/images/svit_logo.png" alt="Logo" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 20px;">
                 <div class="ms-2 d-none d-md-block">
-                <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
-                <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
+                    <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
+                    <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
                 </div>
             </a>
             <!-- Hamburger menu button -->
@@ -39,11 +39,12 @@
                 <!-- Navigation Links -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="admin-dashboard.html" style="margin-top: 10px; color: white;">Dashboard</a>
+                        <a class="nav-link mx-2 active" aria-current="page" href="admin-dashboard.html" style="margin-top: 10px; color: white;">Dashboard</a>
                     </li>
+                    <!-- Dropdown Navigation Link -->
                     <li class="nav-item dropdown">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
-                            Classes
+                          Classes
                         </a>
                         <!-- Contents of Dropdown -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -55,16 +56,30 @@
                     </li>
                     <!-- Dropdown Navigation Link -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle active" href="student-account.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+                          Records
+                        </a>
+                        <!-- Contents of Dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Accounting/accounting-financial_recs.html">Financial Record</a></li>
+                            <li><a class="dropdown-item" href="admin-classes_grade8.html">Attendance Record</a></li>
+                            <li><a class="dropdown-item" href="admin-classes_grade9.html">Academic Record</a></li>
+                            <li><a class="dropdown-item" href="admin-classes_grade10.html">Anecdotal Record</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown Navigation Link -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="student-account.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
                             Users Lists
                         </a>
                         <!-- Contents of Dropdown -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="admin-faculty_list.html">Students List</a></li>
                             <li><a class="dropdown-item" href="admin-faculty_list.html">Faculty List</a></li>
                             <li><a class="dropdown-item" href="admin-guidance_list.html">Guidance</a></li>
                             <li><a class="dropdown-item" href="admin-registrar_list.html">Registrar</a></li>
                             <li><a class="dropdown-item" href="admin-accounting_list.html">Accounting</a></li>
-                            <li><a class="dropdown-item active" href="admin-admin_list.html">Admin</a></li>
+                            <li><a class="dropdown-item" href="admin-admin_list.html">Admin</a></li>
                         </ul>
                     </li>
                     <!-- Third Dropdown -->
