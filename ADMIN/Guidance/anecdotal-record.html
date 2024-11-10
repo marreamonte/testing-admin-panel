@@ -125,28 +125,58 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Grade Level</th>
+                                <th scope="col">Section</th>
+                                <th scope="col">Violation Count</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>Mujar</td>
+                                <td>Mark Melvin</td>
+                                <td>Grade 7</td>
+                                <td>Genesis</td>
+                                <td>2</td>
+                                <td>
+                                    <button class="btn btn-primary">View</button>
+                                </td>                                
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td>Mendoza</td>
+                                <td>Luigi</td>
+                                <td>Grade 8</td>
+                                <td>Genesis</td>
+                                <td>3</td>
+                                <td>
+                                    <button class="btn btn-primary">View</button>
+                                </td> 
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td>Fraga</td>
+                                <td>Robert William</td>
+                                <td>Grade 9</td>
+                                <td>Exsodus</td>
+                                <td>4</td>
+                                <td>
+                                    <button class="btn btn-primary">View</button>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Martin</td>
+                                <td>Joebert</td>
+                                <td>Grade 10</td>
+                                <td>Exsodus</td>
+                                <td>1</td>
+                                <td>
+                                    <button class="btn btn-primary">View</button>
+                                </td> 
                             </tr>
                         </tbody>
                     </table>
@@ -162,7 +192,23 @@
                             <input type="text" class="form-control" placeholder="Student Name" aria-label="Student's username" aria-describedby="button-addon2">
                             <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
                         </div>
-                    </div>                    
+                    </div> <!-- dapat mag-appear name ng student sa search bar -->                  
+                    
+                    <!-- after appearing, dapat it will display name ng selected student (codes below) -->
+                    <div class="row g-2">
+                        <div class="col-md-7">
+                            <h5><b>Student Name:</b></h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><b>Violation Count:</b></h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><b>Grade Level:</b></h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><b>Section:</b></h5>
+                        </div>
+                    </div> 
 
                     <form class="row g-3">
                         <div class="col-md-3">
@@ -191,14 +237,42 @@
                             <label for="inputState" class="form-label">Violation Type</label>
                             <select id="inputState" class="form-select">
                                 <option selected disabled>...</option>
-                                <option>First Degree</option>
-                                <option>Second Degree</option>
-                                <option>Third Degree</option>
+                                <option>Minor Offense</option>
+                                <option>Serious Offense</option>
                             </select>
                         </div>
-                        <div class="col-md-7">
-                            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="State the incident..."></textarea>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Violation Description</label>
+                            <select id="inputState" class="form-select">
+                                <option selected disabled>...</option>
+                                <option>Improper/Incomplete Uniform</option>
+                                <option>Irregularity in Attendance</option>
+                                <option>Habitual Tardiness</option>
+                                <option>No Excuse Letter for Absences</option>
+                                <option>Outlandish Appearance</option>
+                                <option>Use of Vulgar Words</option>
+                                <option>Littering</option>
+                                <option>Loitering</option>
+                                <option>Disruption of Classes</option>
+                                <option>Uttering Vulgar Words</option>
+                                <option>Cutting Classes</option>
+                                <option>Shouting/Howling</option>
+                                <option>Impoliteness</option>
+                                <option>Not Attending School Activities</option>
+                                <option>Improper Behavior</option>
+                                <option>Bringing Cellular Phones or War Toys</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputState" class="form-label">Violation Count</label>
+                            <select id="inputState" class="form-select">
+                                <option selected disabled>...</option>
+                                <option>1st Offense</option>
+                                <option>2nd Offense</option>
+                                <option>3rd Offense</option>
+                                <option>4th Offense</option>
+                                <option>5th Offense</option>
+                            </select>
                         </div>
                         <div class="col-12 text-end" style="margin: 3vh auto;">
                             <button type="submit" class="btn btn-primary">Submit</button>
