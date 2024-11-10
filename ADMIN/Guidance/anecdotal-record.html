@@ -121,6 +121,13 @@
         <div class="tab-content" id="facultyTabContent">
             <div class="tab-pane fade show active" id="sec1-tab-pane" role="tabpanel" aria-labelledby="sec1-tab" tabindex="0">
                 <div class="contaier">
+                    <div class="col-md-4 col-sm-6 m-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Student Name" aria-label="Student's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+                        </div>
+                    </div> <!-- dapat mag-appear name ng student sa search bar -->    
+
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -142,8 +149,71 @@
                                 <td>Genesis</td>
                                 <td>2</td>
                                 <td>
-                                    <button class="btn btn-primary">View</button>
-                                </td>                                
+                                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
+                                </td>
+                                <!-- Modal Structure -->
+                                <div class="modal modal-xl fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title" id="viewVioHistory"><b>Violation History</b></h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Modal content goes here -->
+                                                <div class="container">
+                                                    <div class="row g-2">
+                                                        <div class="col-md-7">
+                                                            <h5><b>Student Name:</b></h5>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5><b>Violation Count:</b></h5>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5><b>Grade Level:</b></h5>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5><b>Section:</b></h5>
+                                                        </div>
+                                                    </div>
+                                                    <span><hr></span>
+
+                                                    <!-- Scrollable container for cards -->
+                                                    <div class="scrollable-cards-container" style="max-height: 20vw; overflow-y: auto; justify-items: center;">
+                                                        <div class="card m-3 p-2" style="width: 65vw;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Violation 1</h5>
+                                                            </div>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Date of Occurrence:</li>
+                                                                <li class="list-group-item">Time</li>
+                                                                <li class="list-group-item">Violation Type</li>
+                                                                <li class="list-group-item">Violation Description</li>
+                                                                <li class="list-group-item">Violation Count</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="card m-3 p-2" style="width: 65vw;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Violation 2</h5>
+                                                            </div>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Date of Occurrence:</li>
+                                                                <li class="list-group-item">Time</li>
+                                                                <li class="list-group-item">Violation Type</li>
+                                                                <li class="list-group-item">Violation Description</li>
+                                                                <li class="list-group-item">Violation Count</li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Add more cards as needed -->
+                                                    </div> 
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Edit</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -153,29 +223,7 @@
                                 <td>Genesis</td>
                                 <td>3</td>
                                 <td>
-                                    <button class="btn btn-primary">View</button>
-                                </td> 
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Fraga</td>
-                                <td>Robert William</td>
-                                <td>Grade 9</td>
-                                <td>Exsodus</td>
-                                <td>4</td>
-                                <td>
-                                    <button class="btn btn-primary">View</button>
-                                </td> 
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Martin</td>
-                                <td>Joebert</td>
-                                <td>Grade 10</td>
-                                <td>Exsodus</td>
-                                <td>1</td>
-                                <td>
-                                    <button class="btn btn-primary">View</button>
+                                    <button class="btn btn-primary btn-sm">View</button>
                                 </td> 
                             </tr>
                         </tbody>
@@ -219,20 +267,7 @@
                             <label for="inputPassword4" class="form-label">Time</label>
                             <input type="time" class="form-control" id="inputTime">
                         </div>
-                        <div class="col-7">
-                            <label for="inputObserver" class="form-label">Observer's Name</label>
-                            <input type="text" class="form-control" id="inputAddress">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="inputRole" class="form-label">Observer's Role</label>
-                            <select id="inputState" class="form-select">
-                                <option selected disabled>Select Role...</option>
-                                <option>Faculty</option>
-                                <option>Adviser</option>
-                                <option>Student</option>
-                                <option>Staff</option>
-                            </select>
-                        </div>
+                        <div class="cold-md-9"><!-- for space purposes--></div>
                         <div class="col-md-3">
                             <label for="inputState" class="form-label">Violation Type</label>
                             <select id="inputState" class="form-select">
